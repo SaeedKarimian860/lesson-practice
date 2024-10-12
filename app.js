@@ -108,5 +108,68 @@ for (let i = 0; i < myTeams.length; i++) {
     console.log(`${teams.teamName} scored ${teams.score}`);
 }
 
+
+
 //More Practice
+//function scope
+
+let movie = 'Saw';
+
+function watchMovie() {
+    let movie = 'BladeRunner';
+    movie;
+}
+watchMovie();
+movie;
+
+
+
+// let playerScore = 12000;
+// let scoreCounter = 10000;
+
+// if (playerScore >= scoreCounter) {
+//     console.log(`Nice!! You beat the previous score of ${scoreCounter}!!`);
+// }
+// else {
+//     console.log("Try Again!");
+// }
+
+//while loop
+
+const scoreCounter = Math.floor(Math.random() * 20);
+let playerScore = Math.floor(Math.random() * 20);
+while (playerScore !== scoreCounter) {
+    console.log(playerScore);
+    playerScore = Math.floor(Math.random() * 20);
+}
+console.log(`ScoreCounter: ${scoreCounter} PlayerScore: ${playerScore}`);
+
+
+const leagueRatings = {
+    ManCity      : 95,
+    ManUtd       : 75,
+    Arsenal      : 87,
+    Chelsea      : 80,
+    Spurs        : 79,
+    Liverpool    : 90 
+};
+let prem = leagueRatings;
+for(prem of Object.keys(leagueRatings)) {
+    let score = leagueRatings[prem];
+    console.log(`I rated ${prem} ${score} / 100`);
+}
+
+
+// function multiply(x, y) {
+//     console.log(x * y);
+// }
+
+// Return function
+
+function add(x, y) {
+    return x + y;
+}
+const sum = add(30, 40);
+sum;
+
 
