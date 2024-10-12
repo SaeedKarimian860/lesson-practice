@@ -108,4 +108,5 @@ for (let i = 0; i < myTeams.length; i++) {
     console.log(`${teams.teamName} scored ${teams.score}`);
 }
 
+//More Practice
 
