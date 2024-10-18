@@ -173,3 +173,23 @@ const sum = add(30, 40);
 sum;
 
 
+
+
+const getScores = (arr) => {
+    const max =  Math.max(...arr);
+    const min = Math.min(...arr);
+    const sum = arr.reduce((sum, r ) => sum + r);
+    const avg = sum / arr.length;
+        return {
+        max,
+        min,
+        sum,
+        avg
+    }
+}
+
+const results = [7.2, 5.6, 8.8, 9.2, 3.1, 4.5, 6.7];
+
+const score = getScores(results);
+
+
